@@ -68,16 +68,6 @@ var _ = g.Describe("[sig-instrumentation][Late] OpenShift alerting rules [apigro
 	)
 
 	criticalAlertsMissingRunbookURLExceptions := sets.NewString(
-		// Repository: https://github.com/openshift/cluster-network-operator
-		// Issue: https://issues.redhat.com/browse/OCPBUGS-14062
-		"OVNKubernetesNorthboundDatabaseClusterIDError",
-		"OVNKubernetesSouthboundDatabaseClusterIDError",
-		"OVNKubernetesNorthboundDatabaseLeaderError",
-		"OVNKubernetesSouthboundDatabaseLeaderError",
-		"OVNKubernetesNorthboundDatabaseMultipleLeadersError",
-		"OVNKubernetesSouthboundDatabaseMultipleLeadersError",
-		"OVNKubernetesNorthdInactive",
-
 		// Repository: https://github.com/openshift/cluster-kube-scheduler-operator
 		// Issue: https://issues.redhat.com/browse/OCPBUGS-14052
 		"KubeSchedulerDown",
